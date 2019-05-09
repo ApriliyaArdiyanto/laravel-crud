@@ -56,8 +56,8 @@ class BukuController extends Controller
      */
     public function show($id)
     {
-        $book = book::find($id);
-        return view('post.show', compact('book'));
+       $book = book::find($id);
+       return view('post.show',compact('book'));
     }
 
     /**
